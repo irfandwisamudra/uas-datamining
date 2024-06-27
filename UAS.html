@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=87e54e7c" />
   
@@ -62,7 +62,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'UAS';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Estimation of Obesity Levels Based on Eating Habits and Physical Condition" href="intro.html" />
+    <link rel="prev" title="UAS Data Mining - Estimation of Obesity Levels Based on Eating Habits and Physical Condition" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -176,7 +176,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    Estimation of Obesity Levels Based on Eating Habits and Physical Condition
+                    UAS Data Mining - Estimation of Obesity Levels Based on Eating Habits and Physical Condition
                 </a>
             </li>
         </ul>
@@ -389,7 +389,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latar-belakang">Latar Belakang</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#memahami-data">Memahami Data</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-understanding-memahami-data">Data Understanding (Memahami Data)</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengumpulan-data-awal">Pengumpulan Data Awal</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identifikasi-data">Identifikasi data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tabel-distribusi">Tabel Distribusi</a></li>
@@ -406,21 +406,22 @@ document.write(`
 </li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-preprocessing">DATA PREPROCESSING</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-prepocessing-pemrosesan-data-awal">Data Prepocessing (Pemrosesan Data Awal)</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mengatasi-outlier">Mengatasi Outlier</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-modelling">DATA MODELLING</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apa-itu-klasifikasi-data">Apa itu Klasifikasi data</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-modelling-permodelan-data">Data Modelling (Permodelan Data)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apa-itu-klasifikasi-data">Apa itu Klasifikasi Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membuat-model-gaussian-naive-bayes-dengan-code-python">Membuat Model Gaussian Naive Bayes dengan Code Python</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membuat-model-k-nearest-neighbors-knn-dengan-code-python">Membuat Model K-Nearest Neighbors (KNN) dengan Code Python</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membuat-model-classifier-dengan-konsep-ensemble-learning-stacking">Membuat Model Classifier dengan Konsep Ensemble Learning Stacking</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ensemble-learning-stacking-menggunakan-library-sklearn">Ensemble Learning Stacking Menggunakan Library Sklearn</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membuat-model-random-forest-classifier">Membuat Model Random Forest Classifier</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membuat-model-ensemble-bagging-classifier">Membuat Model Ensemble Bagging Classifier</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">KESIMPULAN</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#keputusan">Keputusan</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluasi">Evaluasi</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi">Implementasi</a></li>
 </ul>
 
             </nav>
@@ -483,8 +484,12 @@ document.write(`
 <p>Dengan 16 atribut tersebut, ditemukan adanya hubungan yang signifikan dan menjadi faktor dari tingkat obesitas.</p>
 </li>
 </ul>
-<p>Oleh karena itu, kita dapat putuskan untuk mengambil dataset yang sesuai dan cocok dengan faktor dari tingkat obesitas dari rujukan penelitian sebelumnya, yaitu UCI Machine Learning tentang “Estimation of Obesity Levels Based On Eating Habits and Physical Condition” yang dapat diakses melalui halaman berikut:</p>
-<p><a class="reference external" href="https://archive.ics.uci.edu/dataset/544/estimation+of+obesity+levels+based+on+eating+habits+and+physical+condition">https://archive.ics.uci.edu/dataset/544/estimation+of+obesity+levels+based+on+eating+habits+and+physical+condition</a></p>
+<ul class="simple">
+<li><p>Oleh karena itu, kita dapat putuskan untuk mengambil dataset yang sesuai dan cocok dengan faktor dari tingkat obesitas dari rujukan penelitian sebelumnya, yaitu UCI Machine Learning tentang “Estimation of Obesity Levels Based On Eating Habits and Physical Condition” yang dapat diakses melalui halaman berikut:</p></li>
+</ul>
+<ul class="simple">
+<li><p><a class="reference external" href="https://archive.ics.uci.edu/dataset/544/estimation+of+obesity+levels+based+on+eating+habits+and+physical+condition">https://archive.ics.uci.edu/dataset/544/estimation+of+obesity+levels+based+on+eating+habits+and+physical+condition</a></p></li>
+</ul>
 <p>Berdasarkan dataset yang akan kita pakai tersebut, terdapat 16 fitur dan 1 target yaitu sebagai berikut:</p>
 <p>Fitur:</p>
 <ol class="arabic simple">
@@ -511,8 +516,8 @@ document.write(`
 </ul>
 </section>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="memahami-data">
-<h1>Memahami Data<a class="headerlink" href="#memahami-data" title="Link to this heading">#</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="data-understanding-memahami-data">
+<h1>Data Understanding (Memahami Data)<a class="headerlink" href="#data-understanding-memahami-data" title="Link to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">ucimlrepo</span>
@@ -806,7 +811,9 @@ Note: you may need to restart the kernel to use updated packages.
 </table>
 </div></div></div>
 </div>
-<p>Kemudian menampilkan seluruh baris data di dataframe df_main</p>
+<ul class="simple">
+<li><p>Kemudian menampilkan seluruh baris data di dataframe df_main</p></li>
+</ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -1118,7 +1125,7 @@ Note: you may need to restart the kernel to use updated packages.
 <ul class="simple">
 <li><p>Numeric attributes berarti atribut kuantitatif yang diukur dalam nilai integer atau real.</p></li>
 </ul>
-<p>Mengamati secara langsung dari data yang diperoleh dari Maternal Health Risk dataset dan mendeskripsikan langsung jumlah kolom, nama kolom, jumlah data, missing values, dan type data dari setiap kolom data tersebut</p>
+<p>Mengamati secara langsung dari data yang diperoleh dari dataset, kita dapat mengidentifikasi atribut yang ada pada dataset tersebut muali dari jumlah kolom, nama kolom, jumlah data, missing values, dan type data dari setiap kolom data.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_main</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
@@ -1295,6 +1302,25 @@ memory usage: 297.0+ KB
 <p>Dari hasil kode diatas yang merupakan tabel dari dataset, kita bisa menyimpulkan bahwa data ini memiliki 17 kolom dan 2111 baris.</p>
 <p>Untuk fitur dari dataset tersebut ada 16 fitur yaitu Gender, Age, Height, Weight, family_history_with_overweight, FAVC, FCVC, NCP, CAEC, SMOKE, CH2O, SCC, FAF, TUE, CALC, MTRANS. Sedangkan untuk targetnya adalah NObeyesdad.</p>
 <p>Penjelasan dari setiap fitur yang ada pada tabel diatas:</p>
+<ol class="arabic simple">
+<li><p>Gender: Jenis kelamin, kategorikal (Pria atau Wanita).</p></li>
+<li><p>Age: Usia, numerik (tahun).</p></li>
+<li><p>Height: Tinggi, numerik (meter).</p></li>
+<li><p>Weight: Berat, numerik (kilogram).</p></li>
+<li><p>family_history_with_overweight: Riwayat obesitas dalam keluarga, kategorikal (Ya atau Tidak).</p></li>
+<li><p>FAVC: Frekuensi konsumsi makanan berkalori tinggi, kategorikal (Tidak pernah, Kadang-kadang, Sering).</p></li>
+<li><p>FCVC: Frekuensi konsumsi sayur, kategorikal (Tidak pernah, Kadang-kadang, Sering).</p></li>
+<li><p>NCP: Jumlah makanan utama, numerik.</p></li>
+<li><p>CAEC: Konsumsi makanan di antara waktu makan, kategorikal (Tidak pernah, Kadang-kadang, Sering).</p></li>
+<li><p>SMOKE: Kebiasaan merokok, kategorikal (Ya atau Tidak).</p></li>
+<li><p>CH2O: Jumlah konsumsi air dalam liter per hari, numerik.</p></li>
+<li><p>SCC: Pemantauan konsumsi kalori, kategorikal (Ya atau Tidak).</p></li>
+<li><p>FAF: Frekuensi aktivitas fisik per minggu, numerik.</p></li>
+<li><p>TUE: Waktu penggunaan perangkat teknologi sehari dalam jam, numerik.</p></li>
+<li><p>CALC: Frekuensi konsumsi alkohol, kategorikal (Tidak pernah, Kadang-kadang, Sering).</p></li>
+<li><p>MTRANS: Jenis transportasi yang digunakan individu, kategorikal (Jalan kaki, Sepeda, Mobil).</p></li>
+</ol>
+<p>Untuk targetnya adalah NObeyesdad yang merupakan tingkat obesitas individu (Normal, Kelebihan berat badan I, Kelebihan berat badan II, Obesitas I, Obesitas II, Obesitas III).</p>
 <p>Mengimport library yang diperlukan untuk tahap-tahap yang akan dilakukan selanjutnya</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1411,6 +1437,7 @@ Note: you may need to restart the kernel to use updated packages.
 <img alt="_images/4b4a3f64acc45a5994374e33401e0a3e434c11d7b4aec12a5037b1b40b6be3b2.png" src="_images/4b4a3f64acc45a5994374e33401e0a3e434c11d7b4aec12a5037b1b40b6be3b2.png" />
 </div>
 </div>
+<p>Dari tabel distribusi tersebut, kita bisa melihat bahwa data yang kita miliki memiliki nilai minimum dan maksimum yang berbeda-beda untuk setiap kolom data.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">categorical_var</span> <span class="o">=</span> <span class="p">[</span><span class="n">var</span> <span class="k">for</span> <span class="n">var</span> <span class="ow">in</span> <span class="n">df_main</span><span class="o">.</span><span class="n">columns</span> <span class="k">if</span> <span class="n">df_main</span><span class="p">[</span><span class="n">var</span><span class="p">]</span><span class="o">.</span><span class="n">dtype</span> <span class="o">==</span> <span class="s2">&quot;O&quot;</span><span class="p">]</span>
@@ -1988,6 +2015,7 @@ Name: NObeyesdad, Length: 2111, dtype: int64
 </div>
 </div>
 </div>
+<p>Kita cek terlebih dahulu apakah semua data sudah berupa numerik atau masih ada data kategorikal yang perlu diubah menjadi numerik</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_master</span>
@@ -2270,11 +2298,41 @@ Name: NObeyesdad, Length: 2111, dtype: int64
 <p>2111 rows × 18 columns</p>
 </div></div></div>
 </div>
-<p>Import library yang dibutuhkan untuk mendeteksi outlier menggunakan perhitungan LOF.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_master</span><span class="o">.</span><span class="n">dtypes</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ID                                  int64
+Gender                              int64
+Age                               float64
+Height                            float64
+Weight                            float64
+family_history_with_overweight      int64
+FAVC                                int64
+FCVC                              float64
+NCP                               float64
+CAEC                                int64
+SMOKE                               int64
+CH2O                              float64
+SCC                                 int64
+FAF                               float64
+TUE                               float64
+CALC                                int64
+MTRANS                              int64
+NObeyesdad                          int64
+dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<p>Terlihat bahwa semua data sudah berupa numerik setelah dilakukan label encoding pada data kategorikal.</p>
 </section>
 <section id="deteksi-outlier">
 <h3>Deteksi Outlier<a class="headerlink" href="#deteksi-outlier" title="Link to this heading">#</a></h3>
-<p>Lalu, kami melakukan deteksi outlier, untuk memperbaiki kualitas data.</p>
+<p>Lalu, kita akan melakukan deteksi outlier, untuk memperbaiki kualitas data.</p>
 <p>Menurut referensi yang didapat dari buku “Data Mining : Concept and Technique”:</p>
 <p>Link: <a class="reference external" href="https://myweb.sabanciuniv.edu/rdehkharghani/files/2016/02/The-Morgan-Kaufmann-Series-in-Data-Management-Systems-Jiawei-Han-Micheline-Kamber-Jian-Pei-Data-Mining.-Concepts-and-Techniques-3rd-Edition-Morgan-Kaufmann-2011.pdf">https://myweb.sabanciuniv.edu/rdehkharghani/files/2016/02/The-Morgan-Kaufmann-Series-in-Data-Management-Systems-Jiawei-Han-Micheline-Kamber-Jian-Pei-Data-Mining.-Concepts-and-Techniques-3rd-Edition-Morgan-Kaufmann-2011.pdf</a></p>
 <p>Local Outlier Factor (LOF) adalah metode deteksi outlier yang didasarkan pada kepadatan lokal suatu titik data dalam kaitannya dengan tetangga terdekatnya. Metode ini bertujuan untuk mengidentifikasi outlier lokal dengan membandingkan kepadatan lokal dari suatu titik dengan kepadatan lokal dari tetangga-tetangganya. Berikut adalah komponen utama dan langkah-langkah perhitungan dalam LOF:</p>
@@ -2312,6 +2370,7 @@ lrd_k(o) = \frac{|N_k(o)|}{\sum_{o' \in N_k(o)} \text{reachdist}_k(o', o)}
 \)</span><span class="math notranslate nohighlight">\(
 LOF_k(o) = \frac{\sum_{o' \in N_k(o)} \frac{lrd_k(o')}{lrd_k(o)}}{|N_k(o)|}
 \)</span>$</p>
+<p>Import library yang dibutuhkan untuk mendeteksi outlier menggunakan perhitungan LOF.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -2321,7 +2380,7 @@ LOF_k(o) = \frac{\sum_{o' \in N_k(o)} \frac{lrd_k(o')}{lrd_k(o)}}{|N_k(o)|}
 </div>
 </div>
 <p>Data outlier sering kali mempengaruhi model data secara umum sehingga pengaruh dari data outlier tersebut harus dikurangi atau dihilangkan. Hal ini merujuk kepda <a class="reference external" href="https://ejurnal.its.ac.id/index.php/sains_seni/article/download/22520/3642">https://ejurnal.its.ac.id/index.php/sains_seni/article/download/22520/3642</a></p>
-<p>Proses perhitungan LOF untuk mendeteksi adanya outlier dengan 40 tetangga terdekat menggunakan jarak Euclidean (p=2).</p>
+<p>Proses perhitungan LOF untuk mendeteksi adanya outlier dengan 20 tetangga terdekat menggunakan jarak Euclidean (p=2).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_main_lof</span> <span class="o">=</span> <span class="n">df_master</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -2671,10 +2730,10 @@ C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packa
 </div>
 </div>
 </div>
-<p>Berdasarkan output di atas, terlihat bahwa terdapat 1 data dengan nilai LOF yang sangat jauh yaitu data ID 403.</p>
+<p>Berdasarkan output di atas, terlihat bahwa terdapat 1 data dengan nilai LOF yang sangat jauh dan terindikasi sebagai data outlier yaitu data ID 403.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Menampilkan data dengan ID 499 dan 908</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Menampilkan data dengan ID 403</span>
 <span class="n">data_outlier</span> <span class="o">=</span> <span class="n">df_main_lof</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df_main_lof</span><span class="p">[</span><span class="s2">&quot;ID&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="mi">403</span><span class="p">])]</span>
 
 <span class="n">data_outlier</span>
@@ -2754,8 +2813,8 @@ C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packa
 </section>
 </section>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="data-preprocessing">
-<h1>DATA PREPROCESSING<a class="headerlink" href="#data-preprocessing" title="Link to this heading">#</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="data-prepocessing-pemrosesan-data-awal">
+<h1>Data Prepocessing (Pemrosesan Data Awal)<a class="headerlink" href="#data-prepocessing-pemrosesan-data-awal" title="Link to this heading">#</a></h1>
 <p>Pada data preprocessing kami akan memperbaiki kualitas data karena terdeteksi adanya outlier pada data.</p>
 <section id="mengatasi-outlier">
 <h2>Mengatasi Outlier<a class="headerlink" href="#mengatasi-outlier" title="Link to this heading">#</a></h2>
@@ -3077,8 +3136,19 @@ C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packa
 </div>
 </section>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="data-modelling">
-<h1>DATA MODELLING<a class="headerlink" href="#data-modelling" title="Link to this heading">#</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="data-modelling-permodelan-data">
+<h1>Data Modelling (Permodelan Data)<a class="headerlink" href="#data-modelling-permodelan-data" title="Link to this heading">#</a></h1>
+<p>Setelah data telah bersih, kita akan melakukan pemodelan data menggunakan beberapa algoritma machine learning untuk memprediksi tingkat obesitas seseorang berdasarkan atribut yang ada.</p>
+<p>Sebelum itu, kita lakukan dapat menjaga agar output program tetap bersih dari pesan peringatan kategori FutureWarning.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">simplefilter</span><span class="p">(</span><span class="n">action</span><span class="o">=</span><span class="s1">&#39;ignore&#39;</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="ne">FutureWarning</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Ambil fitur dan target dari dataset yang kita miliki.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">features</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">columns</span>
@@ -3432,13 +3502,13 @@ C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packa
 </div></div></div>
 </div>
 <section id="apa-itu-klasifikasi-data">
-<h2>Apa itu Klasifikasi data<a class="headerlink" href="#apa-itu-klasifikasi-data" title="Link to this heading">#</a></h2>
+<h2>Apa itu Klasifikasi Data<a class="headerlink" href="#apa-itu-klasifikasi-data" title="Link to this heading">#</a></h2>
 <p>Menurut referensi pada buku berjudul  “Data Mining Concept and Techniques” edisi ketiga pada link : link : The-Morgan-Kaufmann-Series-in-Data-Management-Systems-Jiawei-Han-Micheline-Kamber-Jian-Pei-Data-Mining.-Concepts-and-Techniques-3rd-Edition-Morgan-Kaufmann</p>
-<p>“Bagaimana cara kerja klasifikasi?” Klasifikasi data merupakan proses dua langkah, yang terdiri dari langkah pembelajaran (di mana model klasifikasi dibangun) dan langkah klasifikasi (di mana model digunakan untuk memprediksi label kelas untuk data tertentu). Prosesnya ditunjukkan untuk data pengajuan pinjaman</p>
-<img src="image-20240529-205207.png" width="" align="" /><p>Pada bagian ini akan dilakukan perhitungan pada data testing menggunakan model Gaussian Naive Bayes dan KNN</p>
+<p>“Bagaimana cara kerja klasifikasi?” Klasifikasi data merupakan proses dua langkah, yang terdiri dari langkah pembelajaran (di mana model klasifikasi dibangun) dan langkah klasifikasi (di mana model digunakan untuk memprediksi label kelas untuk data tertentu). Prosesnya ditunjukkan untuk data pengajuan pinjaman.</p>
+<img src="klasifikasi-data.png" width="" align="" /><p>Pada bagian ini akan dilakukan perhitungan pada data testing menggunakan model Gaussian Naive Bayes dan KNN.</p>
 <p>Konsep Gaussian Naive Bayes</p>
-<p>menurut referensi yang didapat dari buku “Data Mining : Concept and Technique”: Link:<a class="reference external" href="https://myweb.sabanciuniv.edu/rdehkharghani/files/2016/02/The-Morgan-Kaufmann-Series-in-Data-Management-Systems-Jiawei-Han-Micheline-Kamber-Jian-Pei-Data-Mining.-Concepts-and-Techniques-3rd-Edition-Morgan-Kaufmann-2011.pdf">https://myweb.sabanciuniv.edu/rdehkharghani/files/2016/02/The-Morgan-Kaufmann-Series-in-Data-Management-Systems-Jiawei-Han-Micheline-Kamber-Jian-Pei-Data-Mining.-Concepts-and-Techniques-3rd-Edition-Morgan-Kaufmann-2011.pdf</a></p>
-<p>menjelaskan bahwa Naïve Bayes adalah teknik klasifikasi statistik berdasarkan Teorema Bayes. Ini adalah salah satu algoritma pembelajaran terawasi yang paling sederhana. Pengklasifikasi Naïve Bayes adalah algoritma yang cepat, akurat, dan andal. Pengklasifikasi Naïve Bayes memiliki akurasi dan kecepatan tinggi pada kumpulan data besar.</p>
+<p>Menurut referensi yang didapat dari buku “Data Mining : Concept and Technique”: Link:<a class="reference external" href="https://myweb.sabanciuniv.edu/rdehkharghani/files/2016/02/The-Morgan-Kaufmann-Series-in-Data-Management-Systems-Jiawei-Han-Micheline-Kamber-Jian-Pei-Data-Mining.-Concepts-and-Techniques-3rd-Edition-Morgan-Kaufmann-2011.pdf">https://myweb.sabanciuniv.edu/rdehkharghani/files/2016/02/The-Morgan-Kaufmann-Series-in-Data-Management-Systems-Jiawei-Han-Micheline-Kamber-Jian-Pei-Data-Mining.-Concepts-and-Techniques-3rd-Edition-Morgan-Kaufmann-2011.pdf</a></p>
+<p>Menjelaskan bahwa Naïve Bayes adalah teknik klasifikasi statistik berdasarkan Teorema Bayes. Ini adalah salah satu algoritma pembelajaran terawasi yang paling sederhana. Pengklasifikasi Naïve Bayes adalah algoritma yang cepat, akurat, dan andal. Pengklasifikasi Naïve Bayes memiliki akurasi dan kecepatan tinggi pada kumpulan data besar.</p>
 <p>Algoritma Naïve Bayes terdiri dari dua kata Naïve dan Bayes, yang dapat digambarkan sebagai:</p>
 <ul class="simple">
 <li><p>Naïve: Disebut Naïve karena mengasumsikan kemunculan suatu ciri tertentu tidak bergantung pada kemunculan ciri lainnya. Misalnya jika buah dikenali berdasarkan warna, bentuk, dan rasa, maka buah yang berwarna merah, bulat, dan manis dikenali sebagai apel. Oleh karena itu, setiap fitur secara individual berkontribusi untuk mengidentifikasi bahwa itu adalah sebuah apel tanpa bergantung satu sama lain.</p></li>
@@ -3446,8 +3516,8 @@ C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packa
 <ul class="simple">
 <li><p>Bayes: Disebut Bayes karena bergantung pada prinsip Teorema Bayes.</p></li>
 </ul>
-<p>rumus dari naive bayes :</p>
-<img src="Img/rumus naive bayes.png" width="actual" align="" /><ul class="simple">
+<p>Rumus dari naive bayes :</p>
+<img src="rumus-naive-bayes.png" width="" align="" /><ul class="simple">
 <li><p>P(H|X) =&gt; probabilitas hipotesis H jika diberi data X. Ini dikenal sebagai probabilitas posterior.</p></li>
 </ul>
 <ul class="simple">
@@ -3462,7 +3532,7 @@ C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packa
 </section>
 <section id="membuat-model-gaussian-naive-bayes-dengan-code-python">
 <h2>Membuat Model Gaussian Naive Bayes dengan Code Python<a class="headerlink" href="#membuat-model-gaussian-naive-bayes-dengan-code-python" title="Link to this heading">#</a></h2>
-<p>Mengimport library dari pandas dan sklearn untuk melakukan modelling Gaussian Naive Bayes menggunakan code python</p>
+<p>Mengimport library dari pandas dan sklearn untuk melakukan modelling Gaussian Naive Bayes menggunakan code python.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -3473,7 +3543,7 @@ C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packa
 </div>
 </div>
 </div>
-<p>Menyalin df_main_lof ke dalam variabel df_main_gnb untuk dilakukan perhitungan Gaussian Naive Bayes dan menampilkan df_main_gnb yang telah disalin sebelumnya</p>
+<p>Menyalin df_main_lof ke dalam variabel df_main_gnb untuk dilakukan perhitungan Gaussian Naive Bayes dan menampilkan df_main_gnb yang telah disalin sebelumnya.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_main_gnb</span> <span class="o">=</span> <span class="n">df_main_lof</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -4041,7 +4111,7 @@ C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packa
 <p>422 rows × 16 columns</p>
 </div></div></div>
 </div>
-<p>Mengambil irisan x_train dan y_train dari df_main_gnb berdasarkan kolom ID dan disimpan ke dalam file excel dengan nama main_train.csv</p>
+<p>Mengambil irisan x_train dan y_train dari df_main_gnb berdasarkan kolom ID dan disimpan ke dalam file excel dengan nama main_train.csv.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Mendapatkan irisan antara kolom &#39;ID&#39; dari DataFrame df_main_gnb dan data x_train serta y_train</span>
@@ -4054,7 +4124,7 @@ C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packa
 </div>
 </div>
 </div>
-<p>Mengambil irisan x_test dan y_test dari df_main_gnb berdasarkan kolom ID dan disimpan ke dalam file excel dengan nama main_test.csv</p>
+<p>Mengambil irisan x_test dan y_test dari df_main_gnb berdasarkan kolom ID dan disimpan ke dalam file excel dengan nama main_test.csv.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Mendapatkan irisan antara kolom &#39;ID&#39; dari DataFrame df_main_gnb dan data x_test serta y_test</span>
@@ -4067,13 +4137,13 @@ C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packa
 </div>
 </div>
 </div>
-<p>konsep akurasi model</p>
+<p>Konsep Akurasi Model</p>
 <p>Menggunakan data training untuk mendapatkan pengklasifikasi dan kemudian memperkirakan keakuratan model pembelajaran yang dihasilkan dapat mengakibatkan perkiraan terlalu optimistis yang menyesatkan karena terlalu mengkhususkan algoritma pembelajaran pada data.  Sebaliknya, lebih baik mengukur keakuratan pengklasifikasi pada set pengujian yang terdiri dari tupel berlabel kelas yang tidak digunakan untuk melatih model.</p>
 <p>Menurut referensi pada buku berjudul  “Data Mining Concept and Techniques” edisi ketiga pada link : link : The-Morgan-Kaufmann-Series-in-Data-Management-Systems-Jiawei-Han-Micheline-Kamber-Jian-Pei-Data-Mining.-Concepts-and-Techniques-3rd-Edition-Morgan-Kaufmann</p>
 <div class="math notranslate nohighlight">
 \[\Huge accuracy = \frac{TP + TN}{P + N}\]</div>
-<p>maka kita bisa menggunakan confusion matrix seperti berikut</p>
-<img src="image-20240529-211947.png" width="" align="" /><img src="image-20240529-212506.png" width="" align="" /><p>Maka : kita bisa menghitung akurasi dari suatu model dengan menentukan P’ dan N’ , dimana Tuple postifif ditambah Tuple negatif kita bagi dengan total Tuple baru kita mendapat akurasi model</p>
+<p>Maka kita bisa menggunakan confusion matrix seperti berikut:</p>
+<img src="predicted-class.png" width="" align="" /><img src="classes.png" width="" align="" /><p>Maka : kita bisa menghitung akurasi dari suatu model dengan menentukan P’ dan N’ , dimana Tuple postifif ditambah Tuple negatif kita bagi dengan total Tuple baru kita mendapat akurasi model.</p>
 <p>Membuat model gaussian naive bayes dengan data training, setelah membuat model berdasarkan data training, lalu memprediksi data testing menggunakan model yang sebelumnya sudah dibuat menggunakan data training.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -4090,44 +4160,8 @@ C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packa
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Akurasi: 59.72%
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:767: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if not hasattr(array, &quot;sparse&quot;) and array.dtypes.apply(is_sparse).any():
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:605: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:614: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype) or not is_extension_array_dtype(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:1143: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:1143: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
   y = column_or_1d(y, warn=True)
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:767: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if not hasattr(array, &quot;sparse&quot;) and array.dtypes.apply(is_sparse).any():
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:605: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:614: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype) or not is_extension_array_dtype(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:767: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if not hasattr(array, &quot;sparse&quot;) and array.dtypes.apply(is_sparse).any():
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:605: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:614: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype) or not is_extension_array_dtype(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:767: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if not hasattr(array, &quot;sparse&quot;) and array.dtypes.apply(is_sparse).any():
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:605: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:614: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype) or not is_extension_array_dtype(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:767: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if not hasattr(array, &quot;sparse&quot;) and array.dtypes.apply(is_sparse).any():
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:605: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:614: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype) or not is_extension_array_dtype(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:767: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if not hasattr(array, &quot;sparse&quot;) and array.dtypes.apply(is_sparse).any():
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:605: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:614: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype) or not is_extension_array_dtype(pd_dtype):
 </pre></div>
 </div>
 </div>
@@ -4377,7 +4411,7 @@ C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packa
 </section>
 <section id="membuat-model-k-nearest-neighbors-knn-dengan-code-python">
 <h2>Membuat Model K-Nearest Neighbors (KNN) dengan Code Python<a class="headerlink" href="#membuat-model-k-nearest-neighbors-knn-dengan-code-python" title="Link to this heading">#</a></h2>
-<p>Mengimport library dari pandas dan sklearn untuk melakukan modelling K-Nearest Neighbors (KNN) menggunakan code python</p>
+<p>Mengimport library dari pandas dan sklearn untuk melakukan modelling K-Nearest Neighbors (KNN) menggunakan code python.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -4388,7 +4422,7 @@ C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packa
 </div>
 </div>
 </div>
-<p>Menyalin df_main_lof ke dalam variabel df_main_knn untuk dilakukan perhitungan K-Nearest Neighbors (KNN) dan menampilkan df_main_knn yang telah disalin sebelumnya</p>
+<p>Menyalin df_main_lof ke dalam variabel df_main_knn untuk dilakukan perhitungan K-Nearest Neighbors (KNN) dan menampilkan df_main_knn yang telah disalin sebelumnya.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Copy dataset untuk menjaga konsistensi</span>
@@ -4705,11 +4739,11 @@ C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packa
 </div>
 </div>
 </div>
-<p>Membuat model K-Nearest Neighbors (KNN) dengan 40 tetangga terdekat menggunakan jarak Euclidean (p=2), setelah membuat model berdasarkan data training, lalu memprediksi data testing menggunakan model yang sebelumnya sudah dibuat menggunakan data training.</p>
+<p>Membuat model K-Nearest Neighbors (KNN) dengan 20 tetangga terdekat menggunakan jarak Euclidean (p=2), setelah membuat model berdasarkan data training, lalu memprediksi data testing menggunakan model yang sebelumnya sudah dibuat menggunakan data training.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Inisialisasi model KNN dengan jumlah tetangga k = 40</span>
-<span class="n">knn_model</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">40</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">weights</span><span class="o">=</span><span class="s1">&#39;distance&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Inisialisasi model KNN dengan jumlah tetangga k = 20</span>
+<span class="n">knn_model</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">weights</span><span class="o">=</span><span class="s1">&#39;distance&#39;</span><span class="p">)</span>
 <span class="n">knn_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
 <span class="n">y_pred_knn</span> <span class="o">=</span> <span class="n">knn_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
 
@@ -4720,52 +4754,16 @@ C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packa
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Akurasi KNN: 75.83%
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Akurasi KNN: 80.81%
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:767: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if not hasattr(array, &quot;sparse&quot;) and array.dtypes.apply(is_sparse).any():
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:605: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:614: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype) or not is_extension_array_dtype(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:767: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if not hasattr(array, &quot;sparse&quot;) and array.dtypes.apply(is_sparse).any():
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:605: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:614: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype) or not is_extension_array_dtype(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\neighbors\_classification.py:215: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples,), for example using ravel().
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\neighbors\_classification.py:215: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples,), for example using ravel().
   return self._fit(X, y)
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:767: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if not hasattr(array, &quot;sparse&quot;) and array.dtypes.apply(is_sparse).any():
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:605: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:614: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype) or not is_extension_array_dtype(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:767: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if not hasattr(array, &quot;sparse&quot;) and array.dtypes.apply(is_sparse).any():
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:605: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:614: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype) or not is_extension_array_dtype(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:767: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if not hasattr(array, &quot;sparse&quot;) and array.dtypes.apply(is_sparse).any():
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:605: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:614: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype) or not is_extension_array_dtype(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:767: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if not hasattr(array, &quot;sparse&quot;) and array.dtypes.apply(is_sparse).any():
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:605: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:614: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype) or not is_extension_array_dtype(pd_dtype):
 </pre></div>
 </div>
 </div>
 </div>
-<p>Berdasarkan nilai diatas tingkat akurasinya 83,74%. Ini menunjukkan model tersebut dapat memprediksi dengan benar sekitar 83,74% kasus yang diberikan.</p>
+<p>Berdasarkan nilai diatas tingkat akurasinya 80,81%. Ini menunjukkan model tersebut dapat memprediksi dengan benar sekitar 80,81% kasus yang diberikan.</p>
 <p>Mencoba memprediksi menggunakan model K-Nearest Neighbors (KNN) yang telah dibuat sebelumnya dengan data input 1,20,1.65,80,1,0,3,0,1,2,0,2,0.5,1,1,1.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -4845,13 +4843,13 @@ C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packa
       <th>2</th>
       <td>12</td>
       <td>2</td>
-      <td>2</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>3</th>
       <td>15</td>
       <td>2</td>
-      <td>2</td>
+      <td>4</td>
     </tr>
     <tr>
       <th>4</th>
@@ -4943,10 +4941,16 @@ C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packa
       <td>1</td>
     </tr>
     <tr>
-      <th>6</th>
-      <td>35</td>
-      <td>3</td>
+      <th>2</th>
+      <td>12</td>
       <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>15</td>
+      <td>2</td>
+      <td>4</td>
     </tr>
     <tr>
       <th>7</th>
@@ -4961,16 +4965,16 @@ C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packa
       <td>4</td>
     </tr>
     <tr>
-      <th>9</th>
-      <td>50</td>
-      <td>2</td>
-      <td>1</td>
-    </tr>
-    <tr>
       <th>...</th>
       <td>...</td>
       <td>...</td>
       <td>...</td>
+    </tr>
+    <tr>
+      <th>319</th>
+      <td>1534</td>
+      <td>5</td>
+      <td>7</td>
     </tr>
     <tr>
       <th>335</th>
@@ -4979,22 +4983,16 @@ C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packa
       <td>7</td>
     </tr>
     <tr>
+      <th>336</th>
+      <td>1609</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr>
       <th>344</th>
       <td>1666</td>
       <td>5</td>
       <td>7</td>
-    </tr>
-    <tr>
-      <th>349</th>
-      <td>1713</td>
-      <td>5</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>353</th>
-      <td>1749</td>
-      <td>5</td>
-      <td>6</td>
     </tr>
     <tr>
       <th>408</th>
@@ -5004,36 +5002,13 @@ C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packa
     </tr>
   </tbody>
 </table>
-<p>102 rows × 3 columns</p>
+<p>81 rows × 3 columns</p>
 </div></div></div>
-</div>
-<p>Mencetak akurasi model Gaussian Naive Bayes dan KNN
-, lalu menentukan model mana yang lebih baik berdasarkan akurasi</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Compare with Gaussian Naive Bayes Model</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Akurasi Gaussian Naive Bayes: </span><span class="si">{</span><span class="n">accuracy_gnb</span><span class="si">:</span><span class="s1">.2%</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Akurasi K-Nearest Neighbors: </span><span class="si">{</span><span class="n">accuracy_knn</span><span class="si">:</span><span class="s1">.2%</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
-
-<span class="k">if</span> <span class="n">accuracy_knn</span> <span class="o">&gt;</span> <span class="n">accuracy_gnb</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Model K-Nearest Neighbors (KNN) memiliki akurasi lebih tinggi dan lebih baik untuk deployment.&quot;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Model Gaussian Naive Bayes memiliki akurasi lebih tinggi dan lebih baik untuk deployment.&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Akurasi Gaussian Naive Bayes: 59.72%
-Akurasi K-Nearest Neighbors: 75.83%
-Model K-Nearest Neighbors (KNN) memiliki akurasi lebih tinggi dan lebih baik untuk deployment.
-</pre></div>
-</div>
-</div>
 </div>
 </section>
 <section id="membuat-model-classifier-dengan-konsep-ensemble-learning-stacking">
 <h2>Membuat Model Classifier dengan Konsep Ensemble Learning Stacking<a class="headerlink" href="#membuat-model-classifier-dengan-konsep-ensemble-learning-stacking" title="Link to this heading">#</a></h2>
-<p>p = 1 memakai manhattan, p=2 memakai euclidean</p>
+<p>Kita akan membuat model classifier dengan konsep ensemble learning stacking menggunakan Gaussian Naive Bayes dan K-Nearest Neighbors (KNN) yang telah dibuat sebelumnya.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">c1</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">40</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">weights</span><span class="o">=</span><span class="s1">&#39;distance&#39;</span><span class="p">)</span>
@@ -5047,48 +5022,10 @@ Model K-Nearest Neighbors (KNN) memiliki akurasi lebih tinggi dan lebih baik unt
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:767: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if not hasattr(array, &quot;sparse&quot;) and array.dtypes.apply(is_sparse).any():
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:605: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:614: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype) or not is_extension_array_dtype(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:767: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if not hasattr(array, &quot;sparse&quot;) and array.dtypes.apply(is_sparse).any():
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:605: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:614: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype) or not is_extension_array_dtype(pd_dtype):
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\neighbors\_classification.py:215: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples,), for example using ravel().
+  return self._fit(X, y)
 C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\neighbors\_classification.py:215: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples,), for example using ravel().
   return self._fit(X, y)
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:767: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if not hasattr(array, &quot;sparse&quot;) and array.dtypes.apply(is_sparse).any():
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:605: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:614: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype) or not is_extension_array_dtype(pd_dtype):
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:767: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if not hasattr(array, &quot;sparse&quot;) and array.dtypes.apply(is_sparse).any():
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:605: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:614: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype) or not is_extension_array_dtype(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:767: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if not hasattr(array, &quot;sparse&quot;) and array.dtypes.apply(is_sparse).any():
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:605: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:614: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype) or not is_extension_array_dtype(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\neighbors\_classification.py:215: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples,), for example using ravel().
-  return self._fit(X, y)
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:767: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if not hasattr(array, &quot;sparse&quot;) and array.dtypes.apply(is_sparse).any():
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:605: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:614: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype) or not is_extension_array_dtype(pd_dtype):
 </pre></div>
 </div>
 </div>
@@ -5465,51 +5402,19 @@ C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packa
 <span class="c1"># Mengubah nilai string menjadi numerik menggunakan Label Encoding</span>
 <span class="n">label_encoder</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span>
 
-
 <span class="n">df_meta</span><span class="p">[</span><span class="s1">&#39;p1&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">label_encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df_meta</span><span class="p">[</span><span class="s1">&#39;p1&#39;</span><span class="p">])</span>
 <span class="n">df_meta</span><span class="p">[</span><span class="s1">&#39;p2&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">label_encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df_meta</span><span class="p">[</span><span class="s1">&#39;p2&#39;</span><span class="p">])</span>
 
-
 <span class="n">df_meta</span><span class="p">[[</span><span class="s1">&#39;p1&#39;</span><span class="p">,</span> <span class="s1">&#39;p2&#39;</span><span class="p">]]</span>
-
 
 <span class="n">gnb_model</span> <span class="o">=</span> <span class="n">GaussianNB</span><span class="p">()</span>
 <span class="n">gnb_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">df_meta</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
-
-
-<span class="c1"># Membuat prediksi pada set test</span>
-<span class="c1"># meta_predictions = gnb_model.predict(X_test)</span>
-
-
-<span class="c1"># accuracy_meta = accuracy_score(y_test, meta_predictions)</span>
-
-<span class="c1"># print(accuracy_meta)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:605: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:614: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype) or not is_extension_array_dtype(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:605: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:614: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype) or not is_extension_array_dtype(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:767: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if not hasattr(array, &quot;sparse&quot;) and array.dtypes.apply(is_sparse).any():
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:605: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:614: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype) or not is_extension_array_dtype(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:1143: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:1143: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
   y = column_or_1d(y, warn=True)
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:767: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if not hasattr(array, &quot;sparse&quot;) and array.dtypes.apply(is_sparse).any():
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:605: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:614: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype) or not is_extension_array_dtype(pd_dtype):
 </pre></div>
 </div>
 <div class="output text_html"><style>#sk-container-id-1 {color: black;background-color: white;}#sk-container-id-1 pre{padding: 0;}#sk-container-id-1 div.sk-toggleable {background-color: white;}#sk-container-id-1 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-1 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-1 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-1 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-1 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-1 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-1 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-1 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-1 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-1 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-1 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-1 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-1 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-1 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-1 div.sk-item {position: relative;z-index: 1;}#sk-container-id-1 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-1 div.sk-item::before, #sk-container-id-1 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-1 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-1 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-1 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-1 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-1 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-1 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-1 div.sk-label-container {text-align: center;}#sk-container-id-1 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-1 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-1" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>GaussianNB()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-1" type="checkbox" checked><label for="sk-estimator-id-1" class="sk-toggleable__label sk-toggleable__label-arrow">GaussianNB</label><div class="sk-toggleable__content"><pre>GaussianNB()</pre></div></div></div></div></div></div></div>
@@ -5531,64 +5436,16 @@ C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packa
 
 <span class="n">df_meta_test</span><span class="p">[[</span><span class="s1">&#39;p1&#39;</span><span class="p">,</span> <span class="s1">&#39;p2&#39;</span><span class="p">]]</span>
 
-
-
 <span class="n">predictions</span> <span class="o">=</span> <span class="n">gnb_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">df_meta_test</span><span class="p">)</span>
 
 <span class="n">accuracy_meta</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">predictions</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">accuracy_meta</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Akurasi Meta Model: </span><span class="si">{</span><span class="n">accuracy_meta</span><span class="si">:</span><span class="s1">.2%</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.7748815165876777
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:767: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if not hasattr(array, &quot;sparse&quot;) and array.dtypes.apply(is_sparse).any():
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:605: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:614: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype) or not is_extension_array_dtype(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:767: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if not hasattr(array, &quot;sparse&quot;) and array.dtypes.apply(is_sparse).any():
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:605: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:614: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype) or not is_extension_array_dtype(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:605: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:614: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype) or not is_extension_array_dtype(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:605: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:614: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype) or not is_extension_array_dtype(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:767: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if not hasattr(array, &quot;sparse&quot;) and array.dtypes.apply(is_sparse).any():
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:605: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:614: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype) or not is_extension_array_dtype(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:767: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if not hasattr(array, &quot;sparse&quot;) and array.dtypes.apply(is_sparse).any():
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:605: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:614: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype) or not is_extension_array_dtype(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:767: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if not hasattr(array, &quot;sparse&quot;) and array.dtypes.apply(is_sparse).any():
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:605: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:614: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype) or not is_extension_array_dtype(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:767: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if not hasattr(array, &quot;sparse&quot;) and array.dtypes.apply(is_sparse).any():
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:605: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype):
-C:\Users\Huawei Indonesia\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py:614: FutureWarning: is_sparse is deprecated and will be removed in a future version. Check `isinstance(dtype, pd.SparseDtype)` instead.
-  if is_sparse(pd_dtype) or not is_extension_array_dtype(pd_dtype):
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Akurasi Meta Model: 77.49%
 </pre></div>
 </div>
 </div>
@@ -5964,9 +5821,8 @@ Note: you may need to restart the kernel to use updated packages.
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3-fold cross validation:
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Accuracy: 0.86 (+/- 0.01) [KNN]
+
+Accuracy: 0.86 (+/- 0.01) [KNN]
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Accuracy: 0.94 (+/- 0.01) [Random Forest]
@@ -5987,32 +5843,18 @@ Accuracy: 0.61 (+/- 0.02) [Naive Bayes]
     <span class="n">y_pred</span> <span class="o">=</span> <span class="n">sclf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
     <span class="c1"># Menghitung akurasi pada set test</span>
     <span class="n">accuracy</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Accuracy of StackingClassifier on test set: </span><span class="si">{</span><span class="n">accuracy</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Accuracy of StackingClassifier on test set: </span><span class="si">{</span><span class="n">accuracy</span><span class="si">:</span><span class="s1">.2%</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 <span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error during fitting or predicting with StackingClassifier: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Accuracy of StackingClassifier on test set: 0.9123222748815166
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Accuracy of StackingClassifier on test set: 91.23%
 </pre></div>
 </div>
 </div>
 </div>
-<p>Test Model :</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hasil Prediksi Class: &#39;</span><span class="p">,</span> <span class="n">sclf</span><span class="o">.</span><span class="n">predict</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mf">1.65</span><span class="p">,</span><span class="mi">80</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]]))</span> 
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hasil Prediksi Class:  [3]
-</pre></div>
-</div>
-</div>
-</div>
-<p>Dump Model</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pickle</span>
@@ -6034,14 +5876,7 @@ Accuracy: 0.61 (+/- 0.02) [Naive Bayes]
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">stacking_load</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;stacking_classifier_model.sav&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">stacking_pred</span> <span class="o">=</span> <span class="n">stacking_load</span><span class="o">.</span><span class="n">predict</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mf">1.65</span><span class="p">,</span><span class="mi">80</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]])</span>
-
+<span class="n">stacking_pred</span> <span class="o">=</span> <span class="n">stacking_load</span><span class="o">.</span><span class="n">predict</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mf">1.65</span><span class="p">,</span><span class="mi">80</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]])</span>
 <span class="n">stacking_pred</span>
 </pre></div>
 </div>
@@ -6052,39 +5887,75 @@ Accuracy: 0.61 (+/- 0.02) [Naive Bayes]
 </div>
 </div>
 </div>
+</section>
+<section id="membuat-model-random-forest-classifier">
+<h2>Membuat Model Random Forest Classifier<a class="headerlink" href="#membuat-model-random-forest-classifier" title="Link to this heading">#</a></h2>
+<p>Selanjutnya, kita akan mencoba melatih model Random Forest Classifier menggunakan seluruh data training dan melakukan prediksi menggunakan data testing.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rf_model</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+<span class="c1"># Melatih Random Forest pada data training</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">rf_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+    <span class="c1"># Membuat prediksi pada data test</span>
+    <span class="n">y_pred</span> <span class="o">=</span> <span class="n">rf_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+    <span class="c1"># Menghitung akurasi pada set test</span>
+    <span class="n">accuracy</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Accuracy of random forest on test set: </span><span class="si">{</span><span class="n">accuracy</span><span class="si">:</span><span class="s1">.2%</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error during fitting or predicting with random forest: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Accuracy of random forest on test set: 95.50%
+</pre></div>
+</div>
+</div>
+</div>
+<p>Test Model:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hasil Prediksi Class: &#39;</span><span class="p">,</span> <span class="n">rf_model</span><span class="o">.</span><span class="n">predict</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mf">1.65</span><span class="p">,</span><span class="mi">80</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]]))</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hasil Prediksi Class:  [2]
+</pre></div>
+</div>
+</div>
+</div>
+<p>Dump Model:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pickle</span>
 
-<span class="c1"># Melatih rendom forest pada data training</span>
-<span class="k">try</span><span class="p">:</span>
-    <span class="n">clf2</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
-    <span class="c1"># Membuat prediksi pada data test</span>
-    <span class="n">y_pred</span> <span class="o">=</span> <span class="n">clf2</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
-    <span class="c1"># Menghitung akurasi pada set test</span>
-    <span class="n">accuracy</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Accuracy of random forest on test set: </span><span class="si">{</span><span class="n">accuracy</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
-<span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error during fitting or predicting with random forest: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-
 <span class="c1"># Menyimpan model ke file .sav menggunakan pickle</span>
 <span class="n">model_filename</span> <span class="o">=</span> <span class="s1">&#39;random_forest.sav&#39;</span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">model_filename</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">model_file</span><span class="p">:</span>
-    <span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">clf2</span><span class="p">,</span> <span class="n">model_file</span><span class="p">)</span>
+    <span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">rf_model</span><span class="p">,</span> <span class="n">model_file</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Model saved to </span><span class="si">{</span><span class="n">model_filename</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
-
-<span class="n">rf_load</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;random_forest.sav&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Model saved to random_forest.sav
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rf_load</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;random_forest.sav&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">))</span>
 <span class="n">rf_pred</span> <span class="o">=</span> <span class="n">rf_load</span><span class="o">.</span><span class="n">predict</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mf">1.65</span><span class="p">,</span><span class="mi">80</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]])</span>
 <span class="n">rf_pred</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Accuracy of random forest on test set: 0.9549763033175356
-Model saved to random_forest.sav
-</pre></div>
-</div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([2], dtype=int64)
 </pre></div>
 </div>
@@ -6105,8 +5976,8 @@ Model saved to random_forest.sav
 <span class="c1"># Inisialisasi dictionary untuk menyimpan akurasi</span>
 <span class="n">accuracy_results</span> <span class="o">=</span> <span class="p">{}</span>
 
-<span class="c1"># Loop untuk n_estimators dari 3 sampai 20</span>
-<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">):</span>
+<span class="c1"># Loop untuk n_estimators dari 3 sampai 30</span>
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">31</span><span class="p">):</span>
     <span class="c1"># Membuat dan melatih BaggingClassifier dengan n_estimators yang berbeda</span>
     <span class="n">clf</span> <span class="o">=</span> <span class="n">BaggingClassifier</span><span class="p">(</span><span class="n">base_estimator</span><span class="o">=</span><span class="n">SVC</span><span class="p">(),</span> <span class="n">n_estimators</span><span class="o">=</span><span class="n">n</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
     <span class="n">clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">Y_train</span><span class="p">)</span>
@@ -6122,38 +5993,160 @@ Model saved to random_forest.sav
 
 <span class="c1"># Menampilkan hasil akurasi untuk setiap n_estimators</span>
 <span class="k">for</span> <span class="n">n</span><span class="p">,</span> <span class="n">acc</span> <span class="ow">in</span> <span class="n">accuracy_results</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;n_estimators: </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s1">, Accuracy: </span><span class="si">{</span><span class="n">acc</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;n_estimators: </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s1">, Accuracy: </span><span class="si">{</span><span class="n">acc</span><span class="si">:</span><span class="s1">.2%</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>n_estimators: 3, Accuracy: 0.6232227488151659
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">72</span><span class="p">],</span> <span class="n">line</span> <span class="mi">18</span>
+<span class="g g-Whitespace">     </span><span class="mi">15</span> <span class="n">clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">Y_train</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">17</span> <span class="c1"># Membuat prediksi</span>
+<span class="ne">---&gt; </span><span class="mi">18</span> <span class="n">clf_pred</span> <span class="o">=</span> <span class="n">clf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">20</span> <span class="c1"># Menghitung akurasi</span>
+<span class="g g-Whitespace">     </span><span class="mi">21</span> <span class="n">accuracy</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">Y_test</span><span class="p">,</span> <span class="n">clf_pred</span><span class="p">)</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\ensemble\_bagging.py:827,</span> in <span class="ni">BaggingClassifier.predict</span><span class="nt">(self, X)</span>
+<span class="g g-Whitespace">    </span><span class="mi">809</span> <span class="k">def</span> <span class="nf">predict</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">810</span><span class="w">     </span><span class="sd">&quot;&quot;&quot;Predict class for X.</span>
+<span class="g g-Whitespace">    </span><span class="mi">811</span><span class="sd"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">812</span><span class="sd">     The predicted class of an input sample is computed as the class with</span>
+<span class="sd">   (...)</span>
+<span class="g g-Whitespace">    </span><span class="mi">825</span><span class="sd">         The predicted classes.</span>
+<span class="g g-Whitespace">    </span><span class="mi">826</span><span class="sd">     &quot;&quot;&quot;</span>
+<span class="ne">--&gt; </span><span class="mi">827</span>     <span class="n">predicted_probabilitiy</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">828</span>     <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">classes_</span><span class="o">.</span><span class="n">take</span><span class="p">((</span><span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">predicted_probabilitiy</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\ensemble\_bagging.py:865,</span> in <span class="ni">BaggingClassifier.predict_proba</span><span class="nt">(self, X)</span>
+<span class="g g-Whitespace">    </span><span class="mi">862</span> <span class="c1"># Parallel loop</span>
+<span class="g g-Whitespace">    </span><span class="mi">863</span> <span class="n">n_jobs</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">starts</span> <span class="o">=</span> <span class="n">_partition_estimators</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">n_estimators</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">n_jobs</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">865</span> <span class="n">all_proba</span> <span class="o">=</span> <span class="n">Parallel</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">866</span>     <span class="n">n_jobs</span><span class="o">=</span><span class="n">n_jobs</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">verbose</span><span class="p">,</span> <span class="o">**</span><span class="bp">self</span><span class="o">.</span><span class="n">_parallel_args</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">867</span> <span class="p">)(</span>
+<span class="g g-Whitespace">    </span><span class="mi">868</span>     <span class="n">delayed</span><span class="p">(</span><span class="n">_parallel_predict_proba</span><span class="p">)(</span>
+<span class="g g-Whitespace">    </span><span class="mi">869</span>         <span class="bp">self</span><span class="o">.</span><span class="n">estimators_</span><span class="p">[</span><span class="n">starts</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="p">:</span> <span class="n">starts</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]],</span>
+<span class="g g-Whitespace">    </span><span class="mi">870</span>         <span class="bp">self</span><span class="o">.</span><span class="n">estimators_features_</span><span class="p">[</span><span class="n">starts</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="p">:</span> <span class="n">starts</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]],</span>
+<span class="g g-Whitespace">    </span><span class="mi">871</span>         <span class="n">X</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">872</span>         <span class="bp">self</span><span class="o">.</span><span class="n">n_classes_</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">873</span>     <span class="p">)</span>
+<span class="nn">    874     for i</span> in <span class="ni">range</span><span class="nt">(n_jobs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">875</span> <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">877</span> <span class="c1"># Reduce</span>
+<span class="g g-Whitespace">    </span><span class="mi">878</span> <span class="n">proba</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">all_proba</span><span class="p">)</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">n_estimators</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\parallel.py:63,</span> in <span class="ni">Parallel.__call__</span><span class="nt">(self, iterable)</span>
+<span class="g g-Whitespace">     </span><span class="mi">58</span> <span class="n">config</span> <span class="o">=</span> <span class="n">get_config</span><span class="p">()</span>
+<span class="g g-Whitespace">     </span><span class="mi">59</span> <span class="n">iterable_with_config</span> <span class="o">=</span> <span class="p">(</span>
+<span class="g g-Whitespace">     </span><span class="mi">60</span>     <span class="p">(</span><span class="n">_with_config</span><span class="p">(</span><span class="n">delayed_func</span><span class="p">,</span> <span class="n">config</span><span class="p">),</span> <span class="n">args</span><span class="p">,</span> <span class="n">kwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">61</span>     <span class="k">for</span> <span class="n">delayed_func</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">kwargs</span> <span class="ow">in</span> <span class="n">iterable</span>
+<span class="g g-Whitespace">     </span><span class="mi">62</span> <span class="p">)</span>
+<span class="ne">---&gt; </span><span class="mi">63</span> <span class="k">return</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__call__</span><span class="p">(</span><span class="n">iterable_with_config</span><span class="p">)</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python311\Lib\site-packages\joblib\parallel.py:1863,</span> in <span class="ni">Parallel.__call__</span><span class="nt">(self, iterable)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1861</span>     <span class="n">output</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_sequential_output</span><span class="p">(</span><span class="n">iterable</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1862</span>     <span class="nb">next</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1863</span>     <span class="k">return</span> <span class="n">output</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">return_generator</span> <span class="k">else</span> <span class="nb">list</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1865</span> <span class="c1"># Let&#39;s create an ID that uniquely identifies the current call. If the</span>
+<span class="g g-Whitespace">   </span><span class="mi">1866</span> <span class="c1"># call is interrupted early and that the same instance is immediately</span>
+<span class="g g-Whitespace">   </span><span class="mi">1867</span> <span class="c1"># re-used, this id will be used to prevent workers that were</span>
+<span class="g g-Whitespace">   </span><span class="mi">1868</span> <span class="c1"># concurrently finalizing a task from the previous call to run the</span>
+<span class="g g-Whitespace">   </span><span class="mi">1869</span> <span class="c1"># callback.</span>
+<span class="g g-Whitespace">   </span><span class="mi">1870</span> <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">_lock</span><span class="p">:</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python311\Lib\site-packages\joblib\parallel.py:1792,</span> in <span class="ni">Parallel._get_sequential_output</span><span class="nt">(self, iterable)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1790</span> <span class="bp">self</span><span class="o">.</span><span class="n">n_dispatched_batches</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="g g-Whitespace">   </span><span class="mi">1791</span> <span class="bp">self</span><span class="o">.</span><span class="n">n_dispatched_tasks</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="ne">-&gt; </span><span class="mi">1792</span> <span class="n">res</span> <span class="o">=</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1793</span> <span class="bp">self</span><span class="o">.</span><span class="n">n_completed_tasks</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="g g-Whitespace">   </span><span class="mi">1794</span> <span class="bp">self</span><span class="o">.</span><span class="n">print_progress</span><span class="p">()</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\parallel.py:123,</span> in <span class="ni">_FuncWrapper.__call__</span><span class="nt">(self, *args, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">121</span>     <span class="n">config</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="g g-Whitespace">    </span><span class="mi">122</span> <span class="k">with</span> <span class="n">config_context</span><span class="p">(</span><span class="o">**</span><span class="n">config</span><span class="p">):</span>
+<span class="ne">--&gt; </span><span class="mi">123</span>     <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">function</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\ensemble\_bagging.py:171,</span> in <span class="ni">_parallel_predict_proba</span><span class="nt">(estimators, estimators_features, X, n_classes)</span>
+<span class="g g-Whitespace">    </span><span class="mi">165</span>         <span class="n">proba</span><span class="p">[:,</span> <span class="n">estimator</span><span class="o">.</span><span class="n">classes_</span><span class="p">]</span> <span class="o">+=</span> <span class="n">proba_estimator</span><span class="p">[</span>
+<span class="g g-Whitespace">    </span><span class="mi">166</span>             <span class="p">:,</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">estimator</span><span class="o">.</span><span class="n">classes_</span><span class="p">))</span>
+<span class="g g-Whitespace">    </span><span class="mi">167</span>         <span class="p">]</span>
+<span class="g g-Whitespace">    </span><span class="mi">169</span> <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">170</span>     <span class="c1"># Resort to voting</span>
+<span class="ne">--&gt; </span><span class="mi">171</span>     <span class="n">predictions</span> <span class="o">=</span> <span class="n">estimator</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span> <span class="n">features</span><span class="p">])</span>
+<span class="g g-Whitespace">    </span><span class="mi">173</span>     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_samples</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">174</span>         <span class="n">proba</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">predictions</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\svm\_base.py:820,</span> in <span class="ni">BaseSVC.predict</span><span class="nt">(self, X)</span>
+<span class="g g-Whitespace">    </span><span class="mi">818</span>     <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">decision_function</span><span class="p">(</span><span class="n">X</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">819</span> <span class="k">else</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">820</span>     <span class="n">y</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">821</span> <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">classes_</span><span class="o">.</span><span class="n">take</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">intp</span><span class="p">))</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\svm\_base.py:435,</span> in <span class="ni">BaseLibSVM.predict</span><span class="nt">(self, X)</span>
+<span class="g g-Whitespace">    </span><span class="mi">433</span> <span class="n">X</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_validate_for_predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">434</span> <span class="n">predict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sparse_predict</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sparse</span> <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dense_predict</span>
+<span class="ne">--&gt; </span><span class="mi">435</span> <span class="k">return</span> <span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\svm\_base.py:454,</span> in <span class="ni">BaseLibSVM._dense_predict</span><span class="nt">(self, X)</span>
+<span class="g g-Whitespace">    </span><span class="mi">446</span>         <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">447</span>             <span class="s2">&quot;X.shape[1] = </span><span class="si">%d</span><span class="s2"> should be equal to </span><span class="si">%d</span><span class="s2">, &quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">448</span>             <span class="s2">&quot;the number of samples at training time&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">449</span>             <span class="o">%</span> <span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">shape_fit_</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="g g-Whitespace">    </span><span class="mi">450</span>         <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">452</span> <span class="n">svm_type</span> <span class="o">=</span> <span class="n">LIBSVM_IMPL</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_impl</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">454</span> <span class="k">return</span> <span class="n">libsvm</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">455</span>     <span class="n">X</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">456</span>     <span class="bp">self</span><span class="o">.</span><span class="n">support_</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">457</span>     <span class="bp">self</span><span class="o">.</span><span class="n">support_vectors_</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">458</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_n_support</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">459</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_dual_coef_</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">460</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_intercept_</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">461</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_probA</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">462</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_probB</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">463</span>     <span class="n">svm_type</span><span class="o">=</span><span class="n">svm_type</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">464</span>     <span class="n">kernel</span><span class="o">=</span><span class="n">kernel</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">465</span>     <span class="n">degree</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">degree</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">466</span>     <span class="n">coef0</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">coef0</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">467</span>     <span class="n">gamma</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_gamma</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">468</span>     <span class="n">cache_size</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">cache_size</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">469</span> <span class="p">)</span>
+
+<span class="ne">KeyboardInterrupt</span>: 
 </pre></div>
 </div>
 </div>
 </div>
 </section>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="kesimpulan">
-<h1>KESIMPULAN<a class="headerlink" href="#kesimpulan" title="Link to this heading">#</a></h1>
-<p>Setelah melakukan analisis terhadap dataset tersebut, dapat disimpulkan bahwa ibu yang memiliki kadar glukosa darah tinggi cenderung memiliki risiko kesehatan yang tinggi. BS juga memiliki korelasi kuat dengan Age, Tekanan Darah Sistolik, dan Tekanan Darah Diastolik.
-Usia juga menjadi variabel penting, dimana risiko kesehatan mulai meningkat setelah usia 25 tahun.
-SystolicBP dan DistolicBP memiliki hubungan yang kuat.
-BodyTemp tidak memberikan banyak informasi tetapi sebagian besar ibu di sini memiliki suhu 98F, ibu di atas suhu tersebut cenderung memiliki risiko lebih tinggi.</p>
+<section class="tex2jax_ignore mathjax_ignore" id="evaluasi">
+<h1>Evaluasi<a class="headerlink" href="#evaluasi" title="Link to this heading">#</a></h1>
+<p>Setelah melakukan analisis data, kita dapat menyimpulkan bahwa model Random Forest Classifier memiliki akurasi tertinggi yaitu 95,50% dibandingkan dengan model Gaussian Naive Bayes, KNN, Model Classifier dengan Konsep Ensemble Learning Stacking, Essamble Learning Stacking Menggunakan Library Sklearn, dan Ensemble Bagging Classifier. Berikut adalah perbandingan akurasi dari model-model yang telah dibuat:</p>
 <ul class="simple">
-<li><p>Model dapat memprediksi dengan benar sekitar 63,05% kasus yang diberikan dengan Naive Bayes</p></li>
+<li><p>Gaussian Naive Bayes: 59,72%</p></li>
 </ul>
 <ul class="simple">
-<li><p>Model dapat memprediksi dengan benar sekitar 83,74% kasus yang diberikan dengan KNN</p></li>
+<li><p>K-Nearest Neighbors (KNN): 80,81%</p></li>
 </ul>
 <ul class="simple">
-<li><p>Model dapat memprediksi dengan benar sekitar 86,01% kasus yang diberikan dengan Ensemble Learning Stacking dengan library</p></li>
+<li><p>Model Classifier dengan Konsep Ensemble Learning Stacking: 77,49%</p></li>
 </ul>
+<ul class="simple">
+<li><p>Essamble Learning Stacking Menggunakan Library Sklearn: 91.23%</p></li>
+</ul>
+<ul class="simple">
+<li><p>Random Forest Classifier: 95,50%</p></li>
+</ul>
+<ul class="simple">
+<li><p>Ensemble Bagging Classifier: 62.56%</p></li>
+</ul>
+<p>Berdasarkan hasil tersebut, kita dapat menyimpulkan bahwa model Random Forest Classifier adalah model terbaik untuk memprediksi tingkat obesitas seseorang berdasarkan atribut yang ada. Oleh karena itu, kita dapat menggunakan model Random Forest Classifier untuk membuat aplikasi yang dapat memprediksi tingkat obesitas seseorang berdasarkan atribut yang ada.</p>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="keputusan">
-<h1>Keputusan<a class="headerlink" href="#keputusan" title="Link to this heading">#</a></h1>
-<p>Berdasarkan Analisis Kami akan menggunakan Model dari Ensemble Learning Stacking dengan menggunakan Library sebagai Model Classifier untuk Deployement aplikasi</p>
-<a style='text-decoration:none;line-height:16px;display:flex;color:#5B5B62;padding:10px;justify-content:end;' href='https://deepnote.com?utm_source=created-in-deepnote-cell&projectId=8580c980-9951-40c3-a954-04eac19e4351' target="_blank">
+<section class="tex2jax_ignore mathjax_ignore" id="implementasi">
+<h1>Implementasi<a class="headerlink" href="#implementasi" title="Link to this heading">#</a></h1>
+<p>Implementasi model Random Forest Classifier yang telah dibuat sebelumnya dapat dilakukan dengan membuat aplikasi berbasis web yang dapat memprediksi tingkat obesitas seseorang berdasarkan atribut yang ada.</p>
+<p>Aplikasi tersebut dapat diakses melalui link berikut:
+<a class="reference external" href="http://estimationofobesitylevels.pythonanywhere.com/">http://estimationofobesitylevels.pythonanywhere.com/</a></p>
+<a style='text-decoration:none;line-height:16px;display:flex;color:#5B5B62;padding:10px;justify-content:end;' href='https://deepnote.com?utm_source=created-in-deepnote-cell&projectId=af6fec85-d9ab-42ab-a670-2539560136c5' target="_blank">
 <img alt='Created in deepnote.com' style='display:inline;max-height:16px;margin:0px;margin-right:7.5px;' src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iODBweCIgaGVpZ2h0PSI4MHB4IiB2aWV3Qm94PSIwIDAgODAgODAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDU0LjEgKDc2NDkwKSAtIGh0dHBzOi8vc2tldGNoYXBwLmNvbSAtLT4KICAgIDx0aXRsZT5Hcm91cCAzPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9IkxhbmRpbmciIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJBcnRib2FyZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEyMzUuMDAwMDAwLCAtNzkuMDAwMDAwKSI+CiAgICAgICAgICAgIDxnIGlkPSJHcm91cC0zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMjM1LjAwMDAwMCwgNzkuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8cG9seWdvbiBpZD0iUGF0aC0yMCIgZmlsbD0iIzAyNjVCNCIgcG9pbnRzPSIyLjM3NjIzNzYyIDgwIDM4LjA0NzY2NjcgODAgNTcuODIxNzgyMiA3My44MDU3NTkyIDU3LjgyMTc4MjIgMzIuNzU5MjczOSAzOS4xNDAyMjc4IDMxLjY4MzE2ODMiPjwvcG9seWdvbj4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0zNS4wMDc3MTgsODAgQzQyLjkwNjIwMDcsNzYuNDU0OTM1OCA0Ny41NjQ5MTY3LDcxLjU0MjI2NzEgNDguOTgzODY2LDY1LjI2MTk5MzkgQzUxLjExMjI4OTksNTUuODQxNTg0MiA0MS42NzcxNzk1LDQ5LjIxMjIyODQgMjUuNjIzOTg0Niw0OS4yMTIyMjg0IEMyNS40ODQ5Mjg5LDQ5LjEyNjg0NDggMjkuODI2MTI5Niw0My4yODM4MjQ4IDM4LjY0NzU4NjksMzEuNjgzMTY4MyBMNzIuODcxMjg3MSwzMi41NTQ0MjUgTDY1LjI4MDk3Myw2Ny42NzYzNDIxIEw1MS4xMTIyODk5LDc3LjM3NjE0NCBMMzUuMDA3NzE4LDgwIFoiIGlkPSJQYXRoLTIyIiBmaWxsPSIjMDAyODY4Ij48L3BhdGg+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMCwzNy43MzA0NDA1IEwyNy4xMTQ1MzcsMC4yNTcxMTE0MzYgQzYyLjM3MTUxMjMsLTEuOTkwNzE3MDEgODAsMTAuNTAwMzkyNyA4MCwzNy43MzA0NDA1IEM4MCw2NC45NjA0ODgyIDY0Ljc3NjUwMzgsNzkuMDUwMzQxNCAzNC4zMjk1MTEzLDgwIEM0Ny4wNTUzNDg5LDc3LjU2NzA4MDggNTMuNDE4MjY3Nyw3MC4zMTM2MTAzIDUzLjQxODI2NzcsNTguMjM5NTg4NSBDNTMuNDE4MjY3Nyw0MC4xMjg1NTU3IDM2LjMwMzk1NDQsMzcuNzMwNDQwNSAyNS4yMjc0MTcsMzcuNzMwNDQwNSBDMTcuODQzMDU4NiwzNy43MzA0NDA1IDkuNDMzOTE5NjYsMzcuNzMwNDQwNSAwLDM3LjczMDQ0MDUgWiIgaWQ9IlBhdGgtMTkiIGZpbGw9IiMzNzkzRUYiPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+' > </img>
 Created in <span style='font-weight:600;margin-left:4px;'>Deepnote</span></a></section>
 
@@ -6193,7 +6186,7 @@ Created in <span style='font-weight:600;margin-left:4px;'>Deepnote</span></a></s
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Estimation of Obesity Levels Based on Eating Habits and Physical Condition</p>
+        <p class="prev-next-title">UAS Data Mining - Estimation of Obesity Levels Based on Eating Habits and Physical Condition</p>
       </div>
     </a>
 </div>
@@ -6218,7 +6211,7 @@ Created in <span style='font-weight:600;margin-left:4px;'>Deepnote</span></a></s
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latar-belakang">Latar Belakang</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#memahami-data">Memahami Data</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-understanding-memahami-data">Data Understanding (Memahami Data)</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengumpulan-data-awal">Pengumpulan Data Awal</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identifikasi-data">Identifikasi data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tabel-distribusi">Tabel Distribusi</a></li>
@@ -6235,21 +6228,22 @@ Created in <span style='font-weight:600;margin-left:4px;'>Deepnote</span></a></s
 </li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-preprocessing">DATA PREPROCESSING</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-prepocessing-pemrosesan-data-awal">Data Prepocessing (Pemrosesan Data Awal)</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mengatasi-outlier">Mengatasi Outlier</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-modelling">DATA MODELLING</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apa-itu-klasifikasi-data">Apa itu Klasifikasi data</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-modelling-permodelan-data">Data Modelling (Permodelan Data)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apa-itu-klasifikasi-data">Apa itu Klasifikasi Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membuat-model-gaussian-naive-bayes-dengan-code-python">Membuat Model Gaussian Naive Bayes dengan Code Python</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membuat-model-k-nearest-neighbors-knn-dengan-code-python">Membuat Model K-Nearest Neighbors (KNN) dengan Code Python</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membuat-model-classifier-dengan-konsep-ensemble-learning-stacking">Membuat Model Classifier dengan Konsep Ensemble Learning Stacking</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ensemble-learning-stacking-menggunakan-library-sklearn">Ensemble Learning Stacking Menggunakan Library Sklearn</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membuat-model-random-forest-classifier">Membuat Model Random Forest Classifier</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membuat-model-ensemble-bagging-classifier">Membuat Model Ensemble Bagging Classifier</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">KESIMPULAN</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#keputusan">Keputusan</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluasi">Evaluasi</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi">Implementasi</a></li>
 </ul>
 
   </nav></div>
